@@ -1,0 +1,187 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+nav {
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+    padding: 2em 4em;
+}
+
+nav #menu {
+    padding: 3em 4em 1em 4em;
+    justify-content: stretch;
+}
+
+nav #menu a {
+    color: #fff;
+    padding: 0.6em 1em;
+    margin: 0.4em;
+    text-decoration: none;
+}
+
+nav #menu a#login {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav.nav-blanco {
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+nav.nav-blanco #menu a {
+    color: #333;
+    transition: 0.2s;
+}
+
+nav.nav-blanco #menu a:hover {
+    color: #FF00BF;
+    transition: 0.2s;
+}
+
+nav.nav-blanco #menu a#login {
+    border-color: #333;
+    transition: 0.2s;
+}
+
+header {
+    width: 100%;
+}
+
+header video {
+    width: 100%;
+    height: 100%;
+}
+
+header #header-message {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background: #fff;
+    padding: 2em;
+}
+
+#celular {
+    background-color: #71268C;
+    color: white;
+    justify-content: space-around;
+    padding: 4em 6em;
+}
+
+#celular img {
+    min-height: 15rem;
+    max-height: 30rem;
+    height: 100%;
+}
+
+#celular h1 {
+    padding-top: 1em;
+    padding-bottom: 1em; 
+}
+
+#columna_about {
+    justify-content: space-around;
+}
+
+.with-video {
+   justify-content: space-between; 
+   align-items: center;
+}
+
+.with-video iframe {
+   width: 170%; 
+   height: 30em;
+}
+
+.with-video video {
+   width: 70%; 
+   height: 30em;
+}
+
+.with-video h1::first-line {
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+.with-video > div {
+    padding: 3em;
+}
+
+.with-video p {
+    font-family: Arial;
+    line-height: 1.5em;
+}
+
+.with-video h1 {
+    line-height: 1.3em;
+    padding-bottom: 1em; 
+}
+
+.with-video a {
+    color: #EA00BA;
+    text-decoration: none;
+}
+
+.with-video a:hover {
+    text-decoration: underline;
+}
+
+#menu-footer, footer {
+    background-color: #333447;
+    color: #fff;  
+}
+
+#menu-footer a, footer a {
+    color: #fff;
+}
+
+#menu-footer img {
+    width: 100px;
+}
+
+#menu-footer {
+    justify-content: space-around;
+}
+
+#menu-footer #download {
+    padding-left: 3em;
+}
+
+#menu-footer div {
+}
+
+#menu-footer div a {
+    padding: 1em;
+}
+
+.separator {
+    width: 60%;
+    border-bottom: 1px solid #fff;
+}
+
+footer {
+    width: 100%;
+    align-items: center;
+}

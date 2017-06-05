@@ -4,41 +4,39 @@
     <meta charset="UTF-8">
     <title>Lyft-Flexbox</title>
     <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://use.fontawesome.com/8f683cd035.js"></script>
 </head>
 <body>
-    <nav>
-        <div>
-            <!-- Logito blanco de la barra superior izquierdo-->
-            <img src="assets/img/logo-white.png">
-            <!-- Menu superior derecho-->
-            <div>
-                <a href="">Drive</a>
-                <a href="">Explore</a>
-                <a href="">Help</a>
-            </div>            
-        </div>
+    <nav class="container row">
+        <!-- Logito blanco de la barra superior izquierdo-->
+        <img id="logo" src="assets/img/logo-white.png">
+        <!-- Menu superior derecho-->
+        <div id="menu">
+            <a href="#celular">Drive</a>
+            <a href="#">Explore</a>
+            <a href="#">Help</a>
+            <a href="#" id="login">Login</a>
+        </div>     
     </nav>
     <!-- header con video de fondo  y formulario de registro-->
-    <header>
-        <div>
-            <video controls>
-                <source src="assets/img/hero-video.mp4" type="video/mp4">
-                  Tu navegador no implementa el elemento <code>video</code>.
-              </video>
-          </div>
-          <div>
-              <h1>TURN MILES INTO MONEY</h1>
-              <h2>SING UP TO DRIVE WITH LYFT.</h2>
-              <input type="text" name="phone" placeholder="Phone Number">
-              <a href="#">Become a Driver</a>
-              <a href="#">Sing up to Ride</a>
-              <p>Already applied?<a href="#">Check the status of your aplication here.</a></p>
-              <p>Earn money fot invting friends to drive. <a href="#">Learn more</a></p>
-          </div>
+    <header class="container row">
+        <video autoplay loop>
+            <source src="assets/img/hero-video.mp4" type="video/mp4">
+        </video>
+        <div id="header-message">
+            <h1>TURN MILES INTO MONEY</h1>
+            <h2>SING UP TO DRIVE WITH LYFT.</h2>
+            <input type="text" name="phone" placeholder="Phone Number">
+            <a href="#">Become a Driver</a>
+            <a href="#">Sing up to Ride</a>
+            <p>Already applied?<a href="#">Check the status of your aplication here.</a></p>
+            <p>Earn money fot invting friends to drive. <a href="#">Learn more</a></p>
+        </div>
       </header>
       <!-- Seccion con "about" y foto celular-->
-      <section>
+      <section class="container" id="celular">
+        <div class="container column" id="columna_about">
           <div>
               <h1>A RIDE IN MINUTES</h1>
               <P>Request a ride and you'll be on your way in minutes. <br>Request. Ride. Repeat</P>
@@ -51,46 +49,38 @@
               <h1>HAPPY DRIVERS. <br>HAPPY RIDERS.</h1>
               <P>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</P>
           </div>
-          <div>
-              <img src="assets/img/phone.png">
-          </div>
+        </div>  
+          <img src="assets/img/phone.png">
       </section>
       <!-- Seccion watch con video de youtube-->
-      <section>
+      <section class="container with-video">
           <div>
-              <h6>WATCH</h6>
-              <H1>AMPLIFY YOUR RIDE</H1>
+              <h1>WATCH<br>AMPLIFY YOUR RIDE</h1>
               <p>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
           </div>
-          <div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
-          </div>
+            <iframe src="https://www.youtube.com/embed/fLSmUWOYpKw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </section>
       <!-- Seccion 2watch con video de youtube-->
-      <section>
-          <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
-        </div>
+      <section class="container with-video">
+            <iframe src="https://www.youtube.com/embed/v8nyGzOLsdw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         <div>
-          <h6>WATCH</h6>
-          <H1>JUNE</H1>
+          <h1>WATCH<br>JUNE</h1>
           <p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride — and sharing her life, too.</p>
       </div>
   </section>
   <!-- Seccion donaciones-->
-  <section>
+  <section class="container with-video">
     <div>
-        <a href="#">LEARN MORE</a>
-        <h1>ROUND UP & DONATE</h1>
+        <h1><a href="#">LEARN MORE</a><br>ROUND UP & DONATE</h1>
         <p>Opt in and we’ll round up each fare to the nearest dollar, then donate the difference to a charitable cause of your choice.</p>
     </div>
-    <video width="560" height="315" controls>
+    <video autoplay loop>
                 <source src="assets/img/round-up-and-donate.mp4" type="video/mp4">
                   Tu navegador no implementa el elemento <code>video</code>.
               </video>
   </section>
-  <footer>
-      <span>
+  <section class="container row" id="menu-footer">
+      <div class="container column">
           <h1><a href="#">Drive</a></h1>
           <h1><a href="#">Ride</a></h1>
           <h1><a href="#">Log in</a></h1>
@@ -101,16 +91,16 @@
           <a href="#">Free Ride Credits</a>
           <a href="#">Driver Bonus</a>
           <a href="#">Gifts Cards</a>
-      </span>
-      <span>
+      </div>
+      <div class="container column">
           <h1>PARTNER</h1>
           <a href="#">Partnerships</a>
           <a href="#">Bussines</a>
           <a href="#">Ambassords</a>
           <a href="#">Developers</a>
           <a href="#">Events</a>
-      </span>
-      <span>
+      </div>
+      <div class="container column">
           <h1>LEARN</h1>
           <a href="#">Safety</a>
           <a href="#">Blog</a>
@@ -120,19 +110,21 @@
           <a href="#">Driver earnings</a>
           <a href="#">Driver jobs</a>
           <a href="#">Round up & Donate</a>
-      </span>
-      <div>
+      </div>
+      <div class="container column" id="download">
           <img src="assets/img/apple-store.svg">
           <img src="assets/img/google-play.png">
           <img src="assets/img/microsoft.png">
       </div>
-      <div>
-          <div><i class="fa fa-twitter" aria-hidden="true"></i></div>
-          <div><i class="fa fa-facebook" aria-hidden="true"></i></div>
-          <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
-          <div></div>
-          <div><p>© 2017 Lyft, Inc.TermsPrivacy</p></div>
+  </section>
+  <footer class="container column">
+      <div class="container row">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
       </div>
+      <div class="separator"></div>
+      <div><p>© 2017 Lyft, Inc.TermsPrivacy</p></div>
   </footer>
 
   <script type="text/javascript" src="assets/js/main.js"></script>    
