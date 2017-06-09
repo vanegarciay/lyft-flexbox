@@ -21,6 +21,7 @@ nav {
     background-color: rgba(0,0,0,0);
     justify-content: space-between;
     width: 100%;
+    z-index: 1;
 }
 
 nav img {
@@ -48,7 +49,7 @@ nav #menu a#login {
 
 nav.nav-blanco {
     background-color: #fff;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 nav.nav-blanco #menu a {
@@ -64,6 +65,21 @@ nav.nav-blanco #menu a:hover {
 nav.nav-blanco #menu a#login {
     border-color: #333;
     transition: 0.2s;
+}
+
+.hidden {
+    display: none;
+}
+
+#sign {
+    border: 2px solid #C4007A;
+    transition: 0.2s;
+    border-radius: 5px;
+    color: #C4007A;
+}
+
+nav.nav-blanco #menu a#sign {
+    color: #C4007A;
 }
 
 header {
@@ -98,7 +114,7 @@ header #header-message {
 
 #celular h1 {
     padding-top: 1em;
-    padding-bottom: 1em; 
+    padding-bottom: 1em;
 }
 
 #columna_about {
@@ -106,17 +122,17 @@ header #header-message {
 }
 
 .with-video {
-   justify-content: space-between; 
+   justify-content: space-between;
    align-items: center;
 }
 
 .with-video iframe {
-   width: 170%; 
+   width: 170%;
    height: 30em;
 }
 
 .with-video video {
-   width: 70%; 
+   width: 70%;
    height: 30em;
 }
 
@@ -136,7 +152,7 @@ header #header-message {
 
 .with-video h1 {
     line-height: 1.3em;
-    padding-bottom: 1em; 
+    padding-bottom: 1em;
 }
 
 .with-video a {
@@ -150,7 +166,7 @@ header #header-message {
 
 #menu-footer, footer {
     background-color: #333447;
-    color: #fff;  
+    color: #fff;
 }
 
 #menu-footer a, footer a {
