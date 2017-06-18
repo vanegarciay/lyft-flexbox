@@ -1,5 +1,23 @@
 document.addEventListener("scroll", ajustarMenu);
 
+var header_message = document.getElementById("header-message");
+header_message.addEventListener("mouseover", mostrarForm);
+header_message.addEventListener("mouseout", ocultarForm);
+
+function mostrarForm () {
+    var inputs_ocultos = document.getElementsByClassName("input-dinamico");
+    for (var i = 0; i <= inputs_ocultos.length; i++) {
+        inputs_ocultos[i].classList.remove("input-oculto");
+    }
+}
+
+function ocultarForm () {
+    var inputs_ocultos = document.getElementsByClassName("input-dinamico");
+    for (var i = 0; i <= inputs_ocultos.length; i++) {
+        inputs_ocultos[i].classList.add("input-oculto");
+    }
+}
+
 function ajustarMenu() {
     var nav = document.getElementsByTagName("nav")[0];
     var logo = document.getElementById("logo");

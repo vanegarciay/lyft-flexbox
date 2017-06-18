@@ -25,35 +25,32 @@
             <a href="#">Help</a>
             <a href="#" id="login">Login</a>
             <a href="#" class="hidden" id="sign">Sign Up</a>
-        </div>     
+        </div>
     </nav>
-    <!-- header con video de fondo  y formulario de registro-->
+    <!-- header con video de fondo y formulario de registro-->
     <header class="container row">
         <video autoplay loop>
             <source src="assets/img/hero-video.mp4" type="video/mp4">
         </video>
         <div id="header-message">
-            <h1>TURN MILES INTO MONEY</h1>
-            <h2>SING UP TO DRIVE WITH LYFT.</h2>
-            <input type="text" name="phone" placeholder="Phone Number">
+            <h1>TURN MILES <br> INTO MONEY</h1>
+            <p><strong>SING UP TO DRIVE WITH LYFT.</strong></p><strong></strong>
+            <input type="text" name="phone" placeholder="Phone Number" id="telefono">
             <div>
               <div>
-                <input type="text" name="first-name" placeholder="First Name">
-                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="text" name="name" class="input-dinamico input-oculto" placeholder="Name">
               </div>
               <div>
-                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="email" class="input-dinamico input-oculto" placeholder="Email">
               </div>
               <div>
-                <input type="text" name="city" placeholder="City">
-                <a href="#">Promo Code?</a>
+                <input type="text" name="city" class="input-dinamico input-oculto" placeholder="City">
               </div>
-              <label><input type="checkbox" value="first_checkbox">I agree to <a href="#">Lyft's Terms of Service</a></label>
             </div>
-            <a href="#">Become a Driver</a>
-            <a href="#">Sing up to Ride</a>
-            <p>Already applied?<a href="#">Check the status of your aplication here.</a></p>
-            <p>Earn money fot invting friends to drive. <a href="#">Learn more</a></p>
+            <button id="btnbecome">Become a Driver</button>
+            <a href="#" id="gris">Sing up to Ride</a>
+            <p class="appli">Already applied? Check the status of your aplication here.</p>
+            <p class="appli">Earn money fot invting friends to drive. Learn more</p>
         </div>
       </header>
       <!-- Seccion con "about" y foto celular-->
@@ -65,13 +62,13 @@
           </div>
           <div>
               <h1>SERIOUS ABOUT SAFETY</h1>
-              <P>From knowing the color of your driver’s car to our 24/7  <br>Trust & Safety Team, we got you.</P>
+              <P>From knowing the color of your driver’s car to our 24/7 <br>Trust & Safety Team, we got you.</P>
           </div>
           <div>
               <h1>HAPPY DRIVERS. <br>HAPPY RIDERS.</h1>
               <P>Ride with us and you’ll see why 9 out of 10 rides end with five stars.</P>
           </div>
-        </div>  
+        </div>
           <img src="assets/img/phone.png">
       </section>
       <!-- Seccion watch con video de youtube-->
@@ -149,6 +146,6 @@
       <div><p>© 2017 Lyft, Inc.TermsPrivacy</p></div>
   </footer>
 
-  <script type="text/javascript" src="assets/js/main.js"></script>    
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
